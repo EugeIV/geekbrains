@@ -4,7 +4,6 @@ def my_func_1(arg1, arg2, arg3):
 
 
 # Второй, но более длинный вариант
-
 def my_func_2(arg1, arg2, arg3):
     l = [arg1, arg2, arg3]
     l.sort()

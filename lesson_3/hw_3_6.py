@@ -4,3 +4,4 @@ def int_func(user_input):
 
 text = input("Введите слово или строку: ")
 print(int_func(text))
+
