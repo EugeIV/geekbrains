@@ -10,4 +10,3 @@ while user_input != "end":
     else:
         total += sum([int(item) for item in list_input], 0)
 print(total)
-

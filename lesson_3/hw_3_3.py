@@ -3,8 +3,12 @@ def my_func_1(arg1, arg2, arg3):
     return (arg1 + arg2 + arg3) - min(arg1, arg2, arg3)
 
 
-# Второй, но более длинный вариант
+# Через *args (от преподавателя)
+def my_func_3 (*args):
+    return sum(args) - min(args)
 
+
+# Второй, но более длинный вариант
 def my_func_2(arg1, arg2, arg3):
     l = [arg1, arg2, arg3]
     l.sort()
@@ -13,3 +17,4 @@ def my_func_2(arg1, arg2, arg3):
 
 print(my_func_1(12, 3, 7))
 print(my_func_2(12, 3, 7))
+print(my_func_3(12, 3, 7))
