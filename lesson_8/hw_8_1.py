@@ -11,7 +11,7 @@ class Data:
     def validation(data):
         if 1 <= Data.date_to_date(data)[0] <= 31:
             if 1 < Data.date_to_date(data)[1] <= 12:
-                if 0 < Data.date_to_date(data) [2]:
+                if 0 < Data.date_to_date(data)[2]:
                     return "Дата верна"
                 else:
                     return "Неверно указан год"
