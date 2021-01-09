@@ -12,13 +12,13 @@ class Data:
         if 1 <= Data.date_to_date(data)[0] <= 31:
             if 1 < Data.date_to_date(data)[1] <= 12:
                 if 0 < Data.date_to_date(data)[2]:
-                    return "Дата верна"
+                    return True
                 else:
-                    return "Неверно указан год"
+                    return False
             else:
-                return "Неверно указан месяц"
+                return False
         else:
-            return "Неверно указана дата"
+            return False
 
 
 # item = Data("29-12-2020")
