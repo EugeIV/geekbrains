@@ -4,19 +4,19 @@ class Cell:
         self.quantity = quantity
 
     def __add__(self, other):
-        return self.quantity + other.quantity
+        return Cell(self.quantity + other.quantity).quantity
 
     def __sub__(self, other):
         if (self.quantity - other.quantity) > 0:
-            return self.quantity - other.quantity
+            return Cell(self.quantity - other.quantity).quantity
         else:
             return "Отрицательное число клеток"
 
     def __mul__(self, other):
-        return self.quantity * other.quantity
+        return Cell(self.quantity * other.quantity).quantity
 
     def __truediv__(self, other):
-        return self.quantity // other.quantity
+        return Cell(self.quantity // other.quantity).quantity
 
     def make_order(self, row):
         result = ""
